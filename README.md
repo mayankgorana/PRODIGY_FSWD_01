@@ -18,4 +18,45 @@ This project is a full-stack **user authentication system** built using **React*
 - 🔁 Seamless navigation between **Login ↔️ Register ↔️ Dashboard**
 
 ## 📂 Project Structure
+secure-authentication/
+├── client/ # React frontend
+│ ├── components/
+│ │ ├── Login.js
+│ │ └── Register.js
+│ ├── styles/
+│ │ └── Login.css
+│ │ └── Register.css
+│ ├── App.js
+│ └── index.js
+├── server/ # Node.js backend
+│ └── server.js
+├── .env
+├── package.json
+└── README.md
 
+
+## ⚙️ Installation Steps
+
+1. **Clone the repository**
+git clone https://github.com/your-username/secure-authentication.git
+cd secure-authentication
+
+2. **Install Backend Dependencies**
+cd server
+npm install
+
+3. **Set up Environment Variables**
+Create a .env file in the server folder:
+SESSION_SECRET=your_secret_key
+
+4.**Run Backend**
+npm start
+
+5. **Install Frontend Dependencies**
+cd ../client
+npm install
+
+6.**Start React App**
+npm start
+
+**Make sure your backend runs on http://localhost:3000 and frontend on http://localhost:3001.**
